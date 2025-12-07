@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: home
 ---
 # Welcome to JustCouriste ⋆⭒˚.⋆🪐 ⋆⭒˚.⋆
 Here, I write about:
@@ -9,3 +9,7 @@ Here, I write about:
 -Astrphysics
 -The nature of reality
 **Stay curious.**
+{% for post in site.posts %}
+### [{{ post.title }}] ({{ post.url }}) 
+{{ post.excerpt}}
+{% endfor %}
